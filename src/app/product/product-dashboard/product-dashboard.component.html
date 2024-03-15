@@ -1,0 +1,9 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <app-product-form></app-product-form>
+            <app-product-card [getData]="prod" *ngFor="let prod of productArr"></app-product-card>
+        </div>
+    </div>
+</div>
