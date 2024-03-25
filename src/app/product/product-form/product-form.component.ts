@@ -30,6 +30,7 @@ export class ProductFormComponent implements OnInit {
       let obj = {...this.prodForm.value, pstatus : psataus.Delivered}
       this._ProductService.onSingleProd(obj)
       alert(`The new product ${obj.pname} is added`)
+      this.prodForm.reset()
     }
   }
 }
