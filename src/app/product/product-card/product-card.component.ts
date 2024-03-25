@@ -17,17 +17,16 @@ export class ProductCardComponent implements OnInit {
   onBtnClick(obj : string){
     if(obj == psataus.Delivered){
         this._prodservice.onUpdateStatus(this.getData.id, psataus.Delivered)  
-      alert(`Product status of ${this.getData.pname}  is  Delivered `)
+ 
 
     }
     if(obj == psataus.Dispatched){
       this._prodservice.onUpdateStatus(this.getData.id, psataus.Dispatched) 
-      alert(`Product status of ${this.getData.pname} is Dispatched `)
+    
 
   }
   if(obj == psataus.Inprograse){
     this._prodservice.onUpdateStatus(this.getData.id, psataus.Inprograse)   
-    alert(`Product status of ${this.getData.pname} is Inprograse `)
 
 }
   }
